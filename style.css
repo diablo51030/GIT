@@ -126,6 +126,21 @@ header .main h2{
 
 .mainarrow{
     padding-top: 48px;
+
+    animation: mainarrow 2s linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mainarrow{
+    0% {
+        transform: translateY(0px); opacity: 1;
+    }
+    50% {
+        transform: translateY(30px); opacity: 0.8;
+    }
+    100% {
+        transform: translateY(0px); opacity: 1;
+    }
 }
 
 /* ---------------------------body ------------------------- */

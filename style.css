@@ -1,5 +1,9 @@
 @import url('reset.css');
 
+*{
+	position: relative;
+}
+
 body{
     width: 100%;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
@@ -12,6 +16,7 @@ header{
     height: 912px;
     background-image: url(img/video.jpg);
     background-repeat: no-repeat;
+    z-index: 2;
 }
 
 header .top{
@@ -24,65 +29,52 @@ header .top{
 }
 
 .top a{
-    margin-right :15px;
+    margin: 15px;
+    z-index: 3;
 }
 
-.top a:hover{
-    color: rgb(185, 185, 185);
-}
 /* top btn */
 
-/* .top_btn{
+.top_btn{
 	color: #DEE8F1;
 	text-decoration: none;
-	font-family: 微軟正黑體;
-	font-weight: 600;
 	font-size: 29px;
-	line-height: 40px;
-
-	padding: 25px 60px;
 	display: inline-block;
-
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-
+	transform: translate(0%,0%);
 	overflow: hidden;
 
 	transition: all 0.8s;
 }
+
 .top_btn:before{
-	content: "";
+	display: none;
+    content: "";
 	position: absolute;
 	width: 320px;
 	height: 320px;
 	border-radius: 130px;
-	background-color: #fff;
-
-	top: 80px;
-	left: 50%;
-	transform: translateX(-50%);
-	animation: wave 5s 0s infinite linear;
-
-	transition: all 0.8s;
-
+	background-color: rgb(81, 134, 212);
 }
 @keyframes wave{
 	0%{
-		transform: translateX(-50%) rotate(0deg);
+		transform: translateX(-50%) translateY(5%) rotate(0deg);
 	}
 	100%{
-		transform: translateX(-50%) rotate(360deg);
+		transform: translateX(-50%) translateY(5%) rotate(360deg);
 	}
 }
-.top_btn:hover{
-	color: #333;
-
+.top a:hover{
+    color: #DEE8F1;
 }
+
 .top_btn:hover:before{
-	top: 15px;
-} */
+	top: 0px;
+	left: 50%;
+	transform: translateX(-50%);
+	animation: wave 5s 0s infinite linear;
+    display: block;
+	transition: all 0.8s;
+}
 
 /* top btn end */
 header ul{

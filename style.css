@@ -26,6 +26,10 @@ header .top{
 .top a{
     margin-right :15px;
 }
+
+.top a:hover{
+    color: rgb(185, 185, 185);
+}
 /* top btn */
 
 /* .top_btn{
@@ -213,7 +217,7 @@ main{
 
 .newsleft button{
     margin-top: 24px;
-    background-color: rgb(190, 190, 190);
+    background-color: rgba(190, 190, 190,0);
     border-radius: 5px;
 }
 

@@ -1,3 +1,483 @@
-h3{
-    color:blue;
+@import url('reset.css');
+
+body{
+    width: 100%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+/* --------------header--------------------- */
+
+header{
+    width: 100%;
+    height: 912px;
+    background-image: url(img/video.jpg);
+    background-repeat: no-repeat;
+}
+
+header .top{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 110px;
+    background-color: rgba(0, 68, 129, 0.5);
+}
+
+.top a{
+    margin-right :15px;
+}
+/* top btn */
+
+/* .top_btn{
+	color: #DEE8F1;
+	text-decoration: none;
+	font-family: 微軟正黑體;
+	font-weight: 600;
+	font-size: 29px;
+	line-height: 40px;
+
+	padding: 25px 60px;
+	display: inline-block;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+	overflow: hidden;
+
+	transition: all 0.8s;
+}
+.top_btn:before{
+	content: "";
+	position: absolute;
+	width: 320px;
+	height: 320px;
+	border-radius: 130px;
+	background-color: #fff;
+
+	top: 80px;
+	left: 50%;
+	transform: translateX(-50%);
+	animation: wave 5s 0s infinite linear;
+
+	transition: all 0.8s;
+
+}
+@keyframes wave{
+	0%{
+		transform: translateX(-50%) rotate(0deg);
+	}
+	100%{
+		transform: translateX(-50%) rotate(360deg);
+	}
+}
+.top_btn:hover{
+	color: #333;
+
+}
+.top_btn:hover:before{
+	top: 15px;
+} */
+
+/* top btn end */
+header ul{
+    display: block;
+    float: right;
+    margin-right: 40px;
+    margin-top: 35px;
+}
+
+header li{
+    font-size: 29px;
+    float: left;
+    margin-left: 30px;
+
+}
+
+header a{
+    color: #DEE8F1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header .main{
+    display: block;
+    width: 331px;
+    margin: 0 auto;
+}
+
+header .main img{
+    display: block;
+    margin: 0 auto;
+}
+
+.mainlogo{
+    padding-top: 275px;
+}
+
+header .main h2{
+    font-size: 40px;
+    color: #DEE8F1;
+    text-align: center;
+    padding-top: 32px;
+    font-weight: bold;
+}
+
+.mainarrow{
+    padding-top: 48px;
+}
+
+/* ---------------------------body ------------------------- */
+
+main{
+    display: block;
+    width: 100%;
+    height: 1734px;
+    background-image: url(img/body.jpg);
+    background-repeat: no-repeat;
+    padding-top: 160px;
+}
+
+
+/* -------------------------NEWS---------------------------- */
+
+.news{
+    display: block;
+    margin:0px auto;
+    width: 1300px;
+    height: 454px;
+    border-radius: 25px;
+    background-color: rgba(0, 68, 129, 0.4);
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.33);
+
+}
+
+/* News 左側 */
+
+.newsleft{
+    display: block;
+    background-image: url(img/newsleftbgi.png);
+    width: 394px;
+    height: 394px;
+    border-radius: 5px;
+    float: left;
+    margin-left: 38px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.newsleft h2{
+    font-size: 45px;
+    margin-top: 20px;
+}
+
+.newsleft h3{
+    font-size: 30px;
+    margin-top: 17px;
+}
+
+
+.newsleft p{
+    display: block;
+    margin: 0 auto;
+    width: 352px;
+    height: 165px;
+    font-size: 20px;
+    margin-top: 17px;
+    line-height: 33px;
+}
+
+.newsleft a{
+    margin-top: 18px;
+    width: 118px;
+    height: 50px;
+    font-size: 28px;
+    color: black;
+}
+
+.newsleft button{
+    margin-top: 24px;
+    background-color: rgb(190, 190, 190);
+    border-radius: 5px;
+}
+
+/* News 右側 */
+.newsright{
+    display: block;
+    width: 860px;
+    height: 394px;
+    float: right;
+    margin-top: 30px;
+}
+
+.newsright ul{
+    color: #DEE8F1;
+    font-size: 29px;
+
+    position: relative;
+}
+
+.newsright ul::before{
+    content: '';
+    display: block;
+    width: 730px;
+    height: 2px;
+    background-color: #DEE8F1;
+
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 70px;
+    margin: auto;
+}
+
+.newsright li{
+    padding-left: 30px;
+    display: inline-block;
+}
+
+.newsright a{
+    color: #DEE8F1;
+    text-decoration: none;
+    line-height: 3.3;
+}
+
+/* -----------------------dispaly area----------------------- */
+
+.display{
+    color: #DEE8F1;
+    font-size: 29px;
+    margin-left: 135px;
+    padding-bottom: 75px;
+    font-weight: bold;
+    margin-top: 155px;
+}
+
+.displayarea{
+    display: flex;
+    align-items: center;
+    width: 1472px;
+    height: 616px;
+    margin: 0 auto;
+}
+
+.displaybtn1{
+    margin-right: 20px;
+    order: -1;
+}
+
+.displaybtn2{
+    margin-left: 20px;
+    order: 15;
+}
+
+.displaycontent{
+    width: 1334px;
+    height: 616px;
+    border-radius: 21px;
+    background-color: rgba(0, 54, 117, .6);
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.33);
+    margin-right: 50px;
+    margin-left: 50px;
+
+    order: 3;
+}
+/* ----------------------display 左側------------------------ */
+
+.displaycontent img{
+    display: block;
+    width: 704px;
+    height: 506px;
+    border-radius: 26px;
+    float: left;
+    margin-top: 55px;
+    margin-left: 76px;
+}
+
+/* ----------------------display 右側------------------------ */
+
+.displayright{
+    display: block;
+    width: 412px;
+    height: 506px;
+    float: right;
+    margin-top: 55px;
+    font-size: 29px;
+    line-height: 1.65;
+}
+
+.displayright ul{
+    padding-top: 15px;
+    padding-left: 68px;
+}
+
+.displayright ul :nth-child(odd){
+    color: #DEE8F1;
+}
+
+.displayright ul :nth-child(even){
+    color: #3E92AF;
+}
+
+/* -----------------------SAVING CORAL AREA--------------------- */
+
+.coralArea{
+    width: 100%;
+    height: 2531px;
+}
+
+.coralArea h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: #004481;
+    padding-left: 132px;
+}
+
+/* temp area */
+
+.temparea{
+    display: block;
+    width: 1630px;
+    height: 522px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.templeft{
+    display: block;
+    float: left;
+    width: 740px;
+    text-align: center;
+}
+
+.templeft img{
+    margin-top: 60px;
+}
+
+.templeft h3{
+    margin-top: 40px;
+    font-size: 35px;
+    color: #004481;
+    font-weight: 600;
+}
+
+.templeft p{
+    margin-top: 60px;
+    font-size: 29px;
+    color: #004481;
+    text-align: left;
+}
+
+.tempright{
+    float: right;
+}
+
+/* bleaching area */
+
+.bleaching{
+    display: block;
+    width: 1630px;
+    height: 522px;
+    margin: 0 auto;
+    margin-top: 250px;
+}
+
+.bleachingleft{
+    float: left;
+}
+
+.bleachingright{
+    float: right;
+    width: 856px;
+    text-align: center;
+}
+
+.bleachingright img{
+    margin-top: 60px;
+}
+
+.bleachingright h3{
+    margin-top: 40px;
+    font-size: 35px;
+    color: #004481;
+    font-weight: 600;
+}
+
+.bleachingright p{
+    width: 700px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 60px;
+    font-size: 29px;
+    color: #004481;
+    text-align: left;
+}
+
+/* ----- American Samoa -----*/
+
+.samoa{
+    text-align: center;
+}
+
+.samoa h2{
+    margin-top: 150px;
+    padding-left: 0;
+}
+
+.samoa img{
+    margin-top: 50px;
+
+}
+
+.samoa h3{
+    margin-top: 35px;
+    font-size: 29px;
+    color: #004481;
+}
+
+/* footer */
+
+footer{
+    background-image: url(img/footerbg.jpg);
+    width: 100%;
+    height: 742px;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: #DEE8F1;
+    font-weight: 600;
+}
+
+.row{
+    display: block;
+    margin: 0 auto;
+    width: 1230px;
+    height: 340px;
+    display: flex;
+    padding-top: 230px;
+}
+
+.sitemenu{
+    font-size: 34px;
+    flex: 1;
+    line-height: 2.5;
+}
+
+.list{
+
+}
+
+.item{
+    font-size: 29px;
+    line-height: 2;
+}
+
+.icon img{
+    margin: 0 23px;
+    float: right;
+    padding-top: 70px;
 }

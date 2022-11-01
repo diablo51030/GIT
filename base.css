@@ -1,0 +1,90 @@
+@import url('reset.css');
+
+/* --------------header--------------------- */
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 68, 129, 1);
+    position: fixed;
+    position: relative;
+}
+
+header .top{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100px;
+}
+
+.logo{
+    margin-left: 4%;
+    margin-top: 5px;
+    float: left;
+}
+
+.top a{
+    margin-right :15px;
+}
+
+header ul{
+    display: block;
+    float: right;
+    margin-right: 40px;
+    margin-top: 32px;
+}
+
+header li{
+    font-size: 29px;
+    float: left;
+    margin-left: 45px;
+}
+
+header a{
+    color: #DEE8F1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*--------------------------- footer -------------------------*/
+
+footer{
+    background-image: url(img/footerbg.jpg);
+    width: 100%;
+    height: 742px;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: #DEE8F1;
+    font-weight: 600;
+}
+
+.row{
+    display: block;
+    margin: 0 auto;
+    width: 1230px;
+    height: 340px;
+    display: flex;
+    padding-top: 230px;
+}
+
+.sitemenu{
+    font-size: 34px;
+    flex: 1;
+    line-height: 2.5;
+}
+
+footer .item{
+    font-size: 29px;
+    line-height: 2;
+}
+
+.icon img{
+    margin: 0 23px;
+    float: right;
+    padding-top: 70px;
+}

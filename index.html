@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
+<body class="index">
     <header>
         <div class = "top">
             <ul>
-                <li><a href="#">ORGANISM</a></li>
-                <li><a href="#">PRODUCT</a></li>
-                <li><a href="#">SERVICE</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">LOGIN</a></li>
+                <li><a  class="top_btn"href="product.html">ORGANISM</a></li>
+                <li><a href="product.html">PRODUCT</a></li>
+                <li><a href="service.html">SERVICE</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="login.html">LOGIN</a></li>
             </ul>
         </div>
         <div class="main">
@@ -25,23 +27,145 @@
         </div>
     </header>
     <main>
-        <h3 class="news">NEWS</h3>
-        <section class="newscontent">
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+        <!-- News 區塊 -->
+        <div class="news">
+        <!-- News 左側 -->
+        <section class="newsleft">
+            <h2>NEWS</h2>
+            <h3>一起認養珊瑚吧！</h3>
+            <p>一群致力於修復海洋環境的志工需要你們的幫助！他們在世界各地設立保護區，修復受損的珊瑚礁復育受損的海洋生態系。藉由認養珊瑚來讓這些志工更無虞的投入拯救海洋環境的任務當中</p>
+            <button><a href="#">MORE</a></button>
+        </section>
+        <!-- News 右側 -->
+        <section class="newsright">
+            <ul><a href="#">
+                <li>2022/10/11</li>
+                <li>新品</li>
+                <li>菲律賓產地珊瑚新品到貨歡迎詢問</li>
+            </a></ul>
+            <ul><a href="#">
+                <li>2022/09/16</li>
+                <li>新聞</li>
+                <li>海大揭密粉紅螢光蛋白質復育珊瑚..</li>
+            </a></ul>
+            <ul><a href="#">
+                <li>2022/08/18</li>
+                <li>新品</li>
+                <li>冠科全智能LED魚缸海水燈到貨!</li>
+            </a></ul>
+            <ul><a href="#">
+                <li class="start">2022/06/03</li>
+                <li>活動</li>
+                <li>CITY CORAL 十五周年慶滿千送百!</li>
+            </a></ul>
             </section>
-        <h3>DISPLAY</h3>
-            <section class="displaycontent">
-                <img src="img/displayimg1.jpg" alt="">
-            </section>
-        
+        </div>
+
+        <!-- Display 區塊 -->
+        <h3 class="display">DISPLAY</h3>
+            <div class="displayarea">
+                <a class="displaybtn1" href="#"><img src="img/Vector 8.png" alt=""></a>
+                <a class="displaybtn2" href="#"><img src="img/Vector 7.png" alt=""></a>
+                <section class="displaycontent">
+                    <!-- Display 左側 -->
+                    <img src="img/displayimg1.jpg" alt="">
+                    <!-- Display 右側 -->
+                    <div class="displayright">
+                        <ul>
+                            <li>Detail</li>
+                            <li>L45 X W45 H45</li>
+                            <li>過濾方式</li>
+                            <li>背部過濾</li>
+                            <li>燈具</li>
+                            <li>藍魔方20W~50W</li>
+                            <li>冷水機 </li>
+                            <li>日昇CL280</li>
+                            <li>DATE</li>
+                            <li>2022/10/11</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
     </main>
 
-    <footer>
+    <!-- Saving Coral 區塊 -->
+    <div class="coralArea">
+        <h2>SAVING CORAL</h2>
+        <div class="temparea">
+            <div class="templeft">
+                <img src="img/hoticon.png" alt="">
+                <h3>全球暖化與氣候變遷</h3>
+                <p>世界氣象組織的數據顯示，地球上現在的氣溫比工業化開始普及之前高了將近1℃。全球氣溫上升所帶來的影響，包含更加頻繁的熱浪、更漫長的乾旱、以及對動植物生態的威脅，包含水中動植物。</p>
+            </div>
+            <img  class="tempright" src="img/temp.jpg" alt="">
+        </div>
 
+    <!-- bleaching 區塊 -->
+        <div class="bleaching">
+            <img class="bleachingleft"src="img/bleachingimg.png" alt="">
+            <div class="bleachingright">
+                <img src="img/bleachingicon.png" alt="">
+                <h3>珊瑚白化</h3>
+                <p>珊瑚群體的死亡，通常是因為生存環境的壓力。適合珊瑚生長的水溫範圍是攝氏 20 至 28 度，持續高溫為珊瑚帶來壓力，是大量珊瑚白化的主因。</p>
+            </div>
+        </div>
+        <div class="samoa">
+            <h2>美屬薩摩亞</h2>
+            <img src="img/American Samoa.jpg" alt="">
+            <h3>美屬薩摩亞群島珊瑚礁白化狀況。【右圖攝於2014年12月；左圖攝於2015年2月】</h3>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="row">
+            <div class="sitemenu">
+                <a href="product.html">ORGANISM</a>
+                <ul class="list">
+                    <li class="item"><a href="product.html">珊瑚</a></li>
+                    <li class="item"><a href="product.html">魚</a></li>
+                    <li class="item"><a href="product.html">蝦</a></li>
+                    <li class="item"><a href="product.html">其他</a></li>
+                </ul>
+            </div>
+            <div class="sitemenu">
+                <a href="product.html">PRODUCT</a>
+                <ul class="list">
+                    <li class="item"><a href="product.html">過濾</a></li>
+                    <li class="item"><a href="product.html">燈具</a></li>
+                    <li class="item"><a href="product.html">櫃子</a></li>
+                    <li class="item"><a href="product.html">魚缸</a></li>
+                    <li class="item"><a href="product.html">周邊</a></li>
+                </ul>
+            </div>
+            <div class="sitemenu">
+                <a href="service.html">SERVICE</a>
+                <ul class="list">
+                    <li class="item"><a href="customize.html">客製造景</a></li>
+                    <li class="item"><a href="homeservice.html">到府維護</a></li>
+                    <li class="item"><a href="query.html">諮詢</a></li>
+                </ul>
+            </div>
+            <div class="sitemenu">
+                <a href="about.html">ABOUT</a>
+                <ul class="list">
+                    <li class="item"><a href="about.html">關於我們</a></li>
+                </ul>
+            </div>
+            <div class="sitemenu">
+                <a href="index.html">NEWS</a>
+                <ul class="list">
+                    <li class="item"><a href="index.html">DISPLAY</a></li>
+                </ul>
+            </div>
+            <div class="sitemenu">
+                <a href="login.html">LOGIN</a>
+            </div>
+        </div>
+        <div class="icon">  
+            <a href="https://www.youtube.com/"><img src="img/youtubeicon.png" alt=""></a>
+            <a href="https://www.facebook.com/"><img src="img/facebookicon.png" alt=""></a>
+            <a href="https://www.instagram.com/"><img src="img/instagramicon.png" alt=""></a>
+        </div>
     </footer>
 
 </body>

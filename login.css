@@ -1,0 +1,94 @@
+@import url('reset.css');
+
+body{
+    width: 100%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+/* -------------- main --------------------- */
+
+.content{
+    display: block;
+    margin: 0 auto;
+    width: 700px; 
+    height: 466px;
+    background-color: #004481;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px 0 rgba(0, 0, 0, 0.3);
+    margin-top: 60px;
+    margin-bottom: 150px;
+}
+
+.content h1{
+    font-size: 26px;
+    color: #DEE8F1;
+    width: 350px;
+    height: 77px;
+    text-align: center;
+    line-height: 77px;
+    font-weight: 500;
+}
+
+.artical{
+    overflow: hidden;
+}
+
+.login{
+    float: left;
+}
+
+.singin{
+    opacity: .8;
+    float: right;
+    background-color: #00396C;
+    border-radius: 0 10px 0 0 ;
+    box-shadow: rgba(0,0,0,0.4) 4px -4px 10px 0px inset;
+}
+
+/* -------------------text area-------------------------- */
+
+.text{
+    display: block;
+    margin: 0 auto;
+    width: 370px;
+    height: 266px;
+    padding-top: 15px;
+}
+
+h2{
+    font-size: 20px;
+    color: #DEE8F1;
+    text-align: left;
+    margin: 20px 0;
+}
+
+input{
+    width: 370px;
+    height: 40px;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #00396C;
+    outline: none;
+    font-size: 16px;
+}
+
+/* -------------------btn-------------------------- */
+
+.btn{
+    display: block;
+    margin: 0 auto;
+    width: 270px;
+    height: 40px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+}
+
+.content a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #004481;
+    font-weight: bold;
+}

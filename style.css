@@ -283,6 +283,30 @@ main{
 
     order: 3;
 }
+
+.dot{
+    display: flex;
+    width: 150px;
+    margin-left: 46%;
+    margin-top: 25px;
+}
+
+.dotb{
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 20px;
+    margin: 0 10px;
+}
+
+.dotw{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 20px;
+    margin: 0 10px;
+}
+
 /* ----------------------display 左側------------------------ */
 
 .displaycontent img{

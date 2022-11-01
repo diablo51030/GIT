@@ -1,0 +1,111 @@
+@import url('reset.css');
+
+body{
+    width: 100%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+/* -------------- main --------------------- */
+
+main{
+    padding-top: 70px;
+}
+
+.service{
+    width: 1100px;
+    height: 178px;
+    border: 5px #004481 solid;
+
+    display: block;
+    margin: 0 auto;
+}
+
+.service h1{
+    font-size: 60px;
+    text-align: center;
+    line-height: 178px;
+    color: #004481;
+}
+
+/* -------------- section --------------------- */
+
+section{
+    display: block;
+    margin: 0 auto;
+    width: 1394px;
+    height: 1839px;
+    border: 5px #004481 solid;
+    margin-top: 110px;
+    color: #004481;
+    margin-bottom: 150px;
+}
+
+section h1{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 100px;
+    font-weight: 550;
+}
+
+article{
+    margin-top: 130px;
+}
+
+/* ---------------------- artical 1 & 3 ---------------------------*/
+
+.article1{
+    overflow: hidden;
+}
+
+.article1 img{
+    float: left;
+    padding-left: 90px;
+}
+
+.customizep1{
+    width: 697px;
+    height: 320px;
+    float: right;
+}
+
+/* ---------------------- artical 2---------------------------*/
+
+.article2{
+    overflow: hidden;
+}
+
+.article2 img{
+    float: right;
+    padding-right: 90px;
+}
+
+.customizep2{
+    width: 697px;
+    height: 320px;
+    float: left;
+}
+
+/* --------------------------- p--------------------------------*/
+
+article p{
+    display: block;
+    margin: 0 auto;
+    width: 420px;
+    font-size: 30px;
+    text-align: left;
+    font-weight: 550;
+    margin-top: 114px;
+}
+
+/* --------------------------- btn--------------------------------*/
+
+.btn{
+    width: 100%;
+}
+
+.btn a{
+    display: block;
+    margin: 134px auto;
+    width: 323px;
+    height: 72px;
+}

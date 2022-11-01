@@ -28,6 +28,10 @@ header .top{
     margin-right :15px;
 }
 
+.top a:hover{
+    color: rgb(185, 185, 185);
+}
+
 header ul{
     display: block;
     float: right;

@@ -114,6 +114,7 @@ footer a{
     height: 322px;
     display: flex;
     padding-top: 280px;
+    position: inherit;
     z-index: 4;
 }
 

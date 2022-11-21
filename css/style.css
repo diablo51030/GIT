@@ -545,10 +545,6 @@ main{
     
     /* video */
     
-    video{
-
-    }
-
     header{
         overflow: hidden;
         position: relative;

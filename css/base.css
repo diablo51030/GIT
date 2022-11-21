@@ -138,6 +138,7 @@ footer .item{
 
 .icon{
     bottom: 20px;
+    z-index: 4;
 }
 
 .icon img{

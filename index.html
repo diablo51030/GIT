@@ -15,7 +15,7 @@
 </head>
 <body id="index" class="index">
     <header>
-        <video controls autoplay loop muted playsinline src="video/Coralvideo.m4v"></video>
+        <video controls autoplay loop muted playsinline id="video" src="video/Coralvideo.m4v"></video>
         <div class = "top">
             <img src="img/logo.png" alt="" class="logo">
             <ul>
@@ -143,7 +143,7 @@
         </div>
         <h3 class="samoah3">美屬薩摩亞群島珊瑚礁白化狀況。<br>【左圖攝於2014年12月；右圖攝於2015年2月】</h3>
     </div>
-    <footer class="footer">
+    <footer id="particles-js" class="footer">
         <div class="row">
             <div class="sitemenu">
                 <a href="product.html">ORGANISM</a>
@@ -198,6 +198,8 @@
     </footer>
     <script src="jquery-3.2.1.min.js"></script>
     <script src="js/slick.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/app.js"></script>
     <script>
     
     // console.log($("div.news").prop("scrollHeight"));
@@ -279,50 +281,60 @@
         }
     })
 
-    $("#topbararrow1").on({"click" : function( ){
-    var src = ($(this).attr('src') === 'img/topbararrow.png')
-    ? 'img/topbararrow_up.png'
-    : 'img/topbararrow.png';
-    $(this).attr('src', src);
-    }
-})
+        $("#topbararrow1").on({"click" : function( ){
+        var src = ($(this).attr('src') === 'img/topbararrow.png')
+        ? 'img/topbararrow_up.png'
+        : 'img/topbararrow.png';
+        $(this).attr('src', src);
+        }
+    })
 
-$("#topbararrow2").on({"click" : function( ){
-    var src = ($(this).attr('src') === 'img/topbararrow.png')
-    ? 'img/topbararrow_up.png'
-    : 'img/topbararrow.png';
-    $(this).attr('src', src);
-    }
-})
-let j = 0;
-$("#topbararrow1").on("click", function(){
-    if( j == 1 ){
-    $("#organism").css("margin-bottom","0");
-    $(".organism div").css('left','-290px');
-    j = j -1;
-    console.log(j);
-    }else{
-    $("#organism").css("margin-bottom","100px");
-    $(".organism div").css('left','0');
-    j = j + 1;
-    console.log(j);
-    }
-})
+    $("#topbararrow2").on({"click" : function( ){
+        var src = ($(this).attr('src') === 'img/topbararrow.png')
+        ? 'img/topbararrow_up.png'
+        : 'img/topbararrow.png';
+        $(this).attr('src', src);
+        }
+    })
+    let j = 0;
+    $("#topbararrow1").on("click", function(){
+        if( j == 1 ){
+        $("#organism").css("margin-bottom","0");
+        $(".organism div").css('left','-290px');
+        j = j -1;
+        console.log(j);
+        }else{
+        $("#organism").css("margin-bottom","100px");
+        $(".organism div").css('left','0');
+        j = j + 1;
+        console.log(j);
+        }
+    })
 
-let k = 0;
-$("#topbararrow2").on("click", function(){
-    if( k == 1 ){
-    $("#product_item").css("margin-bottom","0");
-    $(".product_item div").css('left','-290px');
-    k = k -1;
-    console.log(k);
-    }else{
-    $("#product_item").css("margin-bottom","150px");
-    $(".product_item div").css('left','0');
-    k = k +1;
-    console.log(k);
-    }
-})
+    let k = 0;
+    $("#topbararrow2").on("click", function(){
+        if( k == 1 ){
+        $("#product_item").css("margin-bottom","0");
+        $(".product_item div").css('left','-290px');
+        k = k -1;
+        console.log(k);
+        }else{
+        $("#product_item").css("margin-bottom","150px");
+        $(".product_item div").css('left','0');
+        k = k +1;
+        console.log(k);
+        }
+    })
+
+    document.getElementById('video').play();
+    // $("video")[0].load();
+    // function play(){
+    //     $('video').play();
+    // }
+
+    // play();
+
+    // $("video")[0].autoplay = true;
     </script>
 </body>
 </html>

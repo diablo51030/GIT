@@ -111,9 +111,9 @@ footer a{
     display: block;
     margin: 0 auto;
     width: 1230px;
-    height: 340px;
+    height: 322px;
     display: flex;
-    padding-top: 230px;
+    padding-top: 280px;
     z-index: 3;
 }
 
@@ -134,6 +134,10 @@ footer .item{
 
 .footer h2{
     display: none;
+}
+
+.icon{
+    bottom: 20px;
 }
 
 .icon img{

@@ -4,21 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/864738e1b6.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
-<body class="index">
+<body id="index" class="index">
     <header>
+        <video controls autoplay loop muted  src="video/Coralvideo.m4v"></video>
         <div class = "top">
+            <img src="img/logo.png" alt="" class="logo">
             <ul>
-                <li class="top_btn"><a  href="product.html">ORGANISM</a></li>
-                <li class="top_btn"><a href="product.html">PRODUCT</a></li>
+                <li id="organism" class="organism top_btn"><a href="product.html">ORGANISM</a>
+                    <img id="topbararrow1" src="img/topbararrow.png" alt="">
+                    <div>
+                        <p><a href="product.html">珊瑚</a></p>
+                        <p><a href="product.html">魚蝦</a></p>
+                    </div>
+                </li>
+                <li id="product_item" class="product_item top_btn"><a href="product.html">PRODUCT</a>
+                    <img id="topbararrow2" src="img/topbararrow.png" alt="">
+                    <div>
+                        <p><a href="product.html"></a>魚缸</p></a>
+                        <p><a href="product.html">櫃子</a></p>
+                        <p><a href="product.html">過濾</a></p>
+                        <!-- <p>燈具</p> -->
+                        <!-- <p>周邊</p> -->
+                    </div>
+                </li>
                 <li class="top_btn"><a href="service.html">SERVICE</a></li>
                 <li class="top_btn"><a href="about.html">ABOUT</a></li>
                 <li class="top_btn"><a href="login.html">LOGIN</a></li>
             </ul>
+            <img id = "toolbar" class = "toolbar" src="img/bars-solid.png" alt="">
         </div>
         <div class="main">
             <img  class = "mainlogo" src="img/mainlogo.png" alt="">
@@ -29,98 +51,98 @@
     <main>
         <!-- News 區塊 -->
         <div class="news">
-        <!-- News 左側 -->
-        <section class="newsleft">
-            <h2>NEWS</h2>
-            <h3>一起認養珊瑚吧！</h3>
-            <p>一群致力於修復海洋環境的志工需要你們的幫助！他們在世界各地設立保護區，修復受損的珊瑚礁復育受損的海洋生態系。藉由認養珊瑚來讓這些志工更無虞的投入拯救海洋環境的任務當中</p>
-            <button><a href="#">MORE</a></button>
-        </section>
-        <!-- News 右側 -->
-        <section class="newsright">
-            <ul><a href="#">
-                <li>2022/10/11</li>
-                <li>新品</li>
-                <li>菲律賓產地珊瑚新品到貨歡迎詢問</li>
-            </a></ul>
-            <ul><a href="#">
-                <li>2022/09/16</li>
-                <li>新聞</li>
-                <li>海大揭密粉紅螢光蛋白質復育珊瑚..</li>
-            </a></ul>
-            <ul><a href="#">
-                <li>2022/08/18</li>
-                <li>新品</li>
-                <li>冠科全智能LED魚缸海水燈到貨!</li>
-            </a></ul>
-            <ul><a href="#">
-                <li class="start">2022/06/03</li>
-                <li>活動</li>
-                <li>CITY CORAL 十五周年慶滿千送百!</li>
-            </a></ul>
+            <!-- News 左側 -->
+            <section class="newsleft">
+                <h2>NEWS</h2>
+                <h3>一起認養珊瑚吧！</h3>
+                <p>一群致力於修復海洋環境的志工需要你們的幫助！他們在世界各地設立保護區，修復受損的珊瑚礁復育受損的海洋生態系。藉由認養珊瑚來讓這些志工更無虞的投入拯救海洋環境的任務當中</p>
+                <button><a href="#">MORE</a></button>
             </section>
+            <!-- News 右側 -->
+            <section class="newsright">
+                <ul><a href="#">
+                    <li>2022/10/11</li>
+                    <li class="type">新品</li>
+                    <li>菲律賓產地珊瑚新品到貨歡迎詢問</li>
+                </a></ul>
+                <ul><a href="#">
+                    <li>2022/09/16</li>
+                    <li class="type">新聞</li>
+                    <li>海大揭密粉紅螢光蛋白質復育珊瑚..</li>
+                </a></ul>
+                <ul><a href="#">
+                    <li>2022/08/18</li>
+                    <li class="type">新品</li>
+                    <li>冠科全智能LED魚缸海水燈到貨!</li>
+                </a></ul>
+                <ul class="last_ul"><a href="#">
+                    <li class="start">2022/06/03</li>
+                    <li class="type">活動</li>
+                    <li>CITY CORAL 十五周年慶滿千送百!</li>
+                </a></ul>
+            </section>
+            <!-- Display 區塊 -->
         </div>
-
-        <!-- Display 區塊 -->
         <h3 class="display">DISPLAY</h3>
-            <div class="displayarea">
-                <a class="displaybtn1" href="#"><img src="img/Vector 8.png" alt=""></a>
-                <a class="displaybtn2" href="#"><img src="img/Vector 7.png" alt=""></a>
-                <section class="displaycontent">
-                    <!-- Display 左側 -->
-                    <img src="img/displayimg1.jpg" alt="">
-                    <!-- Display 右側 -->
-                    <div class="displayright">
-                        <ul>
-                            <li>Detail</li>
-                            <li>L45 X W45 H45</li>
-                            <li>過濾方式</li>
-                            <li>背部過濾</li>
-                            <li>燈具</li>
-                            <li>藍魔方20W~50W</li>
-                            <li>冷水機 </li>
-                            <li>日昇CL280</li>
-                            <li>DATE</li>
-                            <li>2022/10/11</li>
-                        </ul>
-                    </div>
-                </section>
-            </div>
-            <div class="dot">
-                <div class="dotb"></div>
-                <div class="dotw"></div>
-                <div class="dotb"></div>
-            </div>   
+            <section class="displaycontent">
+                <ul class="imgContainer">
+                    <picture>
+                        <source srcset="img/displayimg1_414.png" media="(max-width:414px)">
+                        <img src="img/displayimg1.png" alt="">
+                    </picture>
+                    <picture>
+                        <source srcset="img/displayimg2_414.png" media="(max-width:414px)">
+                        <img src="img/displayimg2.png" alt="">
+                    </picture>
+                    <picture>
+                        <source srcset="img/displayimg3_414.png" media="(max-width:414px)">
+                        <img src="img/displayimg3.png" alt="">
+                    </picture>
+                </ul>
+            </section>
     </main>
 
     <!-- Saving Coral 區塊 -->
-    <div class="coralArea">
+    <div id="coralArea" class="coralArea">
         <h2>SAVING CORAL</h2>
         <div class="temparea">
             <div class="templeft">
-                <img src="img/hoticon.png" alt="">
-                <h3>全球暖化與氣候變遷</h3>
+                <div class="templeft_top">
+                    <img src="img/hoticon.png" alt="">
+                    <h3>全球暖化與氣候變遷</h3>
+                </div>
                 <p>世界氣象組織的數據顯示，地球上現在的氣溫比工業化開始普及之前高了將近1℃。全球氣溫上升所帶來的影響，包含更加頻繁的熱浪、更漫長的乾旱、以及對動植物生態的威脅，包含水中動植物。</p>
             </div>
             <img  class="tempright" src="img/temp.jpg" alt="">
         </div>
-
     <!-- bleaching 區塊 -->
         <div class="bleaching">
-            <img class="bleachingleft"src="img/bleachingimg.png" alt="">
             <div class="bleachingright">
-                <img src="img/bleachingicon.png" alt="">
-                <h3>珊瑚白化</h3>
-                <p>珊瑚群體的死亡，通常是因為生存環境的壓力。適合珊瑚生長的水溫範圍是攝氏 20 至 28 度，持續高溫為珊瑚帶來壓力，是大量珊瑚白化的主因。</p>
+                <div class="bleachingright_top">
+                    <img src="img/bleachingicon.png" alt="">
+                    <h3>珊瑚白化</h3>
+                </div>
+                <div class="p">
+                    <p>珊瑚群體的死亡，通常是因為生存環境的壓力。適合珊瑚生長的水溫圍是   攝氏20 至 28 度，持續高溫為珊瑚帶來壓力，是大量珊瑚白化主因。</p>
+                </div>
+            </div>
+            <img class="bleachingleft"src="img/bleachingimg.png" alt="">
+        </div>
+        <h2 class="samoah2">美屬薩摩亞</h2>
+        <div class="samoa">
+            <div id="img-comp-container">
+                <picture class="img-comp-img">
+                    <source srcset="img/after_414.png" media="(max-width:414px)">
+                    <img src="img/after.jpg" alt="">
+                </picture>
+                <picture class="img-comp-img img-comp-overlay">
+                    <source srcset="img/before_414.png" media="(max-width:414px)">
+                    <img src="img/before.jpg" alt="">
+                </picture>
             </div>
         </div>
-        <div class="samoa">
-            <h2>美屬薩摩亞</h2>
-            <img src="img/American Samoa.jpg" alt="">
-            <h3>美屬薩摩亞群島珊瑚礁白化狀況。【右圖攝於2014年12月；左圖攝於2015年2月】</h3>
-        </div>
+        <h3 class="samoah3">美屬薩摩亞群島珊瑚礁白化狀況。<br>【左圖攝於2014年12月；右圖攝於2015年2月】</h3>
     </div>
-
     <footer class="footer">
         <div class="row">
             <div class="sitemenu">
@@ -157,21 +179,150 @@
                 </ul>
             </div>
             <div class="sitemenu">
-                <a href="index.html">NEWS</a>
+                <a id="news" href="#">NEWS</a>
                 <ul class="list">
-                    <li class="item"><a href="index.html">DISPLAY</a></li>
+                    <li class="item"><a id="display" href="index.html">DISPLAY</a></li>
                 </ul>
             </div>
             <div class="sitemenu">
                 <a href="login.html">LOGIN</a>
             </div>
         </div>
+        <a href="#"><img src="img/logo.png" alt="" class="footerLogo"></a>
+        <h2>City Coral</h2>
         <div class="icon">  
             <a href="https://www.youtube.com/"><img src="img/youtubeicon.png" alt=""></a>
             <a href="https://www.facebook.com/"><img src="img/facebookicon.png" alt=""></a>
             <a href="https://www.instagram.com/"><img src="img/instagramicon.png" alt=""></a>
         </div>
     </footer>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script>
+    
+    // console.log($("div.news").prop("scrollHeight"));
 
+    $("#news").on("click", function(e){
+        e.preventDefault();
+        $("html").animate({
+            scrollTop: 730
+        });
+    });
+
+    $("#display").on("click", function(e){
+        e.preventDefault();
+        $("html").animate({
+            scrollTop: 1350
+        });
+    });
+
+    initComparisons()
+
+    $('.imgContainer').slick({
+        speed: 600,
+        autoplay: true,
+        dots: true
+    });
+
+    $(window).scroll(function(){    
+        var scroll = $(window).scrollTop();
+        if (scroll <= 0) {
+            $(".logo").css("opacity","0");
+            $(".top").css("background-color","rgba(0, 68, 129, 0.5)");
+        } 
+        if (scroll >= 120) {
+            $(".logo").css("opacity","0.1");
+            $(".top").css("background-color","rgba(0, 68, 129, 0.55)");
+        } 
+        if (scroll >= 240) {
+            $(".logo").css("opacity","0.2");
+            $(".top").css("background-color","rgba(0, 68, 129, 0.6)");
+        } 
+        if(scroll >= 360){
+            $(".logo").css("opacity","0.4");
+            $(".top").css("background-color","rgba(0, 68, 129, 0.7)");
+        }
+        if(scroll >= 480){
+            $(".logo").css("opacity","0.6");
+            $(".top").css("background-color","rgba(0, 68, 129, 0.8)");
+        }
+        if(scroll >= 600){
+            $(".logo").css("opacity","0.8");
+            $(".top").css("background-color","rgba(0, 68, 129, 0.9)");
+        }
+        if(scroll >= 720){
+            $(".logo").css("opacity","1");
+            $(".top").css("background-color","rgba(0, 68, 129, 1)");
+        }
+        if(scroll >= 2100){
+            $(".templeft").animate({left:'0px', opacity:'1'},"slow" );
+        }
+        if(scroll >= 2500){
+            $(".bleachingright").animate({right:'0px', opacity:'1'},"slow" );
+        }
+    });
+
+        let i = 0;
+    $('.toolbar').on('click', function( ){
+        if( i == 0 ){
+        $('header ul').css('left','0');
+        $(".top").css("background-color",'rgba(0, 68, 129, 1)');
+        $(".logo").fadeTo( "slow", 1 );
+        i = i +1;
+        // console.log(i)
+        }else{
+        $('header ul').css('left','-290px');
+        $(".top").css("background-color",'rgba(0, 68, 129, 0.5)');
+        $(".logo").fadeTo( "slow", 0 );
+        i = i -1;
+        // console.log(i)
+        }
+    })
+
+    $("#topbararrow1").on({"click" : function( ){
+    var src = ($(this).attr('src') === 'img/topbararrow.png')
+    ? 'img/topbararrow_up.png'
+    : 'img/topbararrow.png';
+    $(this).attr('src', src);
+    }
+})
+
+$("#topbararrow2").on({"click" : function( ){
+    var src = ($(this).attr('src') === 'img/topbararrow.png')
+    ? 'img/topbararrow_up.png'
+    : 'img/topbararrow.png';
+    $(this).attr('src', src);
+    }
+})
+let j = 0;
+$("#topbararrow1").on("click", function(){
+    if( j == 1 ){
+    $("#organism").css("margin-bottom","0");
+    $(".organism div").css('left','-290px');
+    j = j -1;
+    console.log(j);
+    }else{
+    $("#organism").css("margin-bottom","100px");
+    $(".organism div").css('left','0');
+    j = j + 1;
+    console.log(j);
+    }
+})
+
+let k = 0;
+$("#topbararrow2").on("click", function(){
+    if( k == 1 ){
+    $("#product_item").css("margin-bottom","0");
+    $(".product_item div").css('left','-290px');
+    k = k -1;
+    console.log(k);
+    }else{
+    $("#product_item").css("margin-bottom","150px");
+    $(".product_item div").css('left','0');
+    k = k +1;
+    console.log(k);
+    }
+})
+    </script>
 </body>
 </html>

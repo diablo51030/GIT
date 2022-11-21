@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="customize.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/customize.css">
     <title>customize</title>
 </head>
 <body>
@@ -16,41 +16,65 @@
                 <a href="index.html"><img src="img/logo.png" alt=""></a>
             </div>
             <ul>
-                <li><a href="product.html">ORGANISM</a></li>
-                <li><a href="product.html">PRODUCT</a></li>
+                <li id="organism" class="organism"><a href="product.html">ORGANISM</a>
+                    <img id="topbararrow1" src="img/topbararrow.png" alt="">
+                    <div>
+                        <p>珊瑚</p>
+                        <p>魚蝦</p>
+                    </div>
+                </li>
+                <li id="product_item" class="product_item"><a href="product.html">PRODUCT</a>
+                    <img id="topbararrow2" src="img/topbararrow.png" alt="">
+                    <div>
+                        <p>魚缸</p>
+                        <p>櫃子</p>
+                        <p>過濾</p>
+                        <!-- <p>燈具</p> -->
+                        <!-- <p>周邊</p> -->
+                    </div>
+                </li>
                 <li><a href="service.html">SERVICE</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="login.html">LOGIN</a></li>
             </ul>
+            <img id = "toolbar" class = "toolbar" src="img/bars-solid.png" alt="">
         </div>
     </header>
     <main>
         <div class="service">
-            <h1>SERVICE</h1>
+            <h1>CUSTOMIZE</h1>
+        </div>
+        <div class="guide_box">
+            <div class="guideBoxContent">
+                <div class="linebar">客製造景</div>
+                <div class="linebar"><a href="homeservice.html">到府維護</a></div>
+                <div class="linebar"><a href="query.html">詢問</a></div>
+            </div>
         </div>
         <section>
             <h1>客製造景</h1>
-            <article class="article1">
+            <article id="article1" class="article1">
                 <img src="img/customizeimg1.jpg" alt="">
-                <div class="customizep1">                
-                    <p>量身打造您夢想中的海水缸了解<br>業主的需求後，提供合適的方案<br>與配置讓雙方有相同的共識</p>
+                <div class="customizep1">
+                    <img src="img/customizeicon1.png" alt="">                
+                    <p>量身打造您夢想中的海水缸了解業主的需求後，提供合適的方案與配置讓雙方有相同的共識</p>
                 </div>
             </article>
-            <article class="article2">
+            <article id="article2" class="article2">
                 <img src="img/customizeimg2.png" alt="">
                 <div class="customizep2">
+                    <img src="img/customizeicon2.png" alt="">
                     <p>在最短的時間內準備好一切將業主心目中的理想海水缸設置好，並把照顧所須注意事項都詳細註記讓業主無負擔輕鬆飼養</p>
                 </div>
             </article>
-            <article class="article1">
+            <article id="article3" class="article1">
                 <img src="img/customizeimg3.jpg" alt="">
-                <div class="customizep1">
+                <div class="customizep3">
+                    <img src="img/customizeicon3.png" alt="">                
                     <p>誠信至上透明且合理的報價，製作業主心目中的理想海水缸</p>
                 </div>    
             </article>
-            <div class="btn" >
-                <a href="query.html"><img src="img/secvicebtn.png" alt=""></a>
-            </div>
+            <a href="query.html"><div class="btn" >預約</div></a>
         </section>
 
     </main>
@@ -99,11 +123,30 @@
                 <a href="login.html">LOGIN</a>
             </div>
         </div>
+        <a href="#"><img src="img/logo.png" alt="" class="footerLogo"></a>
+        <h2>City Coral</h2>
         <div class="icon">  
             <a href="https://www.youtube.com/"><img src="img/youtubeicon.png" alt=""></a>
             <a href="https://www.facebook.com/"><img src="img/facebookicon.png" alt=""></a>
             <a href="https://www.instagram.com/"><img src="img/instagramicon.png" alt=""></a>
         </div>
     </footer>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="js/base.js"></script>
+    <script>
+         $(window).scroll(function(){
+            var scroll = $(window).scrollTop();
+            // console.log(scroll);
+            if(scroll >= 200){
+            $("#article1 p").animate({opacity:'1'});
+            }
+            if(scroll >= 600){
+            $("#article2 p").animate({opacity:'1'});
+            }
+            if(scroll >= 800){
+            $("#article3 p").animate({opacity:'1'});
+            }
+         })
+    </script>
 </body>
 </html>

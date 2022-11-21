@@ -1,0 +1,210 @@
+@import url('reset.css');
+
+body{
+    width: 100%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+/* -------------- main --------------------- */
+
+main{
+    padding-top: 70px;
+}
+
+.service{
+    width: 1100px;
+    height: 178px;
+    border: 5px #004481 solid;
+
+    display: block;
+    margin: 0 auto;
+}
+
+.service h1{
+    font-size: 60px;
+    text-align: center;
+    line-height: 178px;
+    color: #004481;
+}
+
+/* -------------- section --------------------- */
+
+section{
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+    height: 692px;
+    margin-top: 110px;
+    color: #004481;
+    margin-bottom: 150px;
+    overflow: hidden;
+    /* border: 1px black solid; */
+}
+
+/* ---------------------- artical 1---------------------------*/
+
+.article1{
+    overflow: hidden;
+}
+
+.customizep1{
+    width: 560px;
+    height: 320px;
+    float: right;
+
+    display: block;
+    margin: 0 auto;
+
+}
+
+.article1 img{
+    float: left;
+    width: 500px;
+    height: 320px;
+}
+
+.customizep1 h1{
+    font-size: 40px;
+    font-weight: 550;
+    color: #004481;
+    text-align: center;
+    margin-top: 55px;
+}
+
+.article1 p{
+    display: block;
+    margin: 0 auto;
+    width: 420px;
+    font-size: 30px;
+    text-align: left;
+    font-weight: 550;
+    margin-top: 40px;
+}
+
+/* ---------------------- artical 2---------------------------*/
+
+
+.content{
+    display: flex;
+    margin: 0 auto;
+    width: 434px;
+    font-size: 25px;
+    text-align: left;
+    font-weight: 550;
+    margin-top: 35px;
+}
+
+.article2{
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+.article2 .img{
+    float: right;
+}
+
+.article2 h2{
+    font-size: 40px;
+    font-weight: 550;
+    color: #004481;
+    text-align: center;
+    margin-top: 26px;
+}
+
+.customizep2{
+    width: 510px;
+    height: 320px;
+    float: left;
+}
+
+@media screen and (max-width: 414px){
+
+    main{
+        padding-top: 40px;
+    }
+
+    section{
+        width: 90%;
+        margin-top: 50px;
+        height: 970px;
+        margin-bottom: 50px;
+    }
+
+    .service{
+        width: 79%;
+        height: 64px;
+        border: 3px #004481 solid;
+        margin-bottom: 0;
+    }
+
+    .service h1 {
+        font-size: 30px;
+        line-height: 66px;
+    }
+
+    .article1 img{
+        float: none;
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .article1 p{
+        font-size: 20px;        
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    .customizep1{
+        width: 90%;        
+        height: auto;
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .customizep1 h1{
+        font-size: 26px;
+        margin-top: 0;
+    }
+
+    .customizep2{
+        width: 100%;
+        float: none;
+        height: auto;
+    }
+
+    .article2{
+        margin-top: 50px;
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+        overflow: visible;
+    }
+
+    .article2 .img{
+        float: none;
+        margin-top: 50px;
+    }
+
+    .article2 h2{
+        font-size: 26px;
+        margin-top: 50px;
+    }
+
+    .content{
+        font-size: 19px;
+        margin-top: 30px;
+    }
+
+    .content p:nth-child(1){
+        margin-top: 40px;
+    }
+
+    iframe{
+        width: 100%;
+    }
+
+}

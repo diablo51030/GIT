@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="homeservice.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/homeservice.css">
     <title>Homeservice</title>
 </head>
 <body>
@@ -16,29 +16,54 @@
                 <a href="index.html"><img src="img/logo.png" alt=""></a>
             </div>
             <ul>
-                <li><a href="product.html">ORGANISM</a></li>
-                <li><a href="product.html">PRODUCT</a></li>
+                <li id="organism" class="organism"><a href="product.html">ORGANISM</a>
+                    <img id="topbararrow1" src="img/topbararrow.png" alt="">
+                    <div>
+                        <p><a href="product.html">珊瑚</a></p>
+                        <p><a href="product.html">魚蝦</a></p>
+                    </div>
+                </li>
+                <li id="product_item" class="product_item top_btn"><a href="product.html">PRODUCT</a>
+                    <img id="topbararrow2" src="img/topbararrow.png" alt="">
+                    <div>
+                        <p><a href="product.html"></a>魚缸</p></a>
+                        <p><a href="product.html">櫃子</a></p>
+                        <p><a href="product.html">過濾</a></p>
+                        <!-- <p>燈具</p> -->
+                        <!-- <p>周邊</p> -->
+                    </div>
+                </li>
                 <li><a href="service.html">SERVICE</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="login.html">LOGIN</a></li>
             </ul>
+            <img id = "toolbar" class = "toolbar" src="img/bars-solid.png" alt="">
         </div>
     </header>
     <main>
         <div class="service">
-            <h1>SERVICE</h1>
+            <h1>HOMESERVICE</h1>
+        </div>
+        <div class="guide_box">
+            <div class="guideBoxContent">
+                <div class="linebar">到府維護</div>
+                <div class="linebar"><a href="customize.html">客製造景</a></div>
+                <div class="linebar"><a href="query.html">詢問</a></div>
+            </div>
         </div>
         <section>
             <h1>到府維護</h1>
             <article class="article1">
                 <img src="img/homeserviceimg1.png" alt="">
-                <div class="customizep1">                
+                <div class="customizep1"> 
+                    <img src="img/homeserviceicon1.png" alt="">                               
                     <p>維護缸體到府服務，協助換水調整水質。讓海水缸狀態達到珊瑚最佳飼養環境，節省業主寶貴時間。</p>
                 </div>
             </article>
             <article class="article2">
                 <img src="img/homeserviceimg2.png" alt="">
                 <div class="customizep2">
+                    <img src="img/homeserviceicon2.png" alt="">                
                     <p>紀錄維護狀況檢測各項海水數值值並建立歷史資料，解決業主面臨的問題。提供業主解決問題前與解決問題後的各項素質比對且給予業主飼養建議。</p>
                 </div>
             </article>
@@ -90,11 +115,26 @@
                 <a href="login.html">LOGIN</a>
             </div>
         </div>
+        <a href="#"><img src="img/logo.png" alt="" class="footerLogo"></a>
+        <h2>City Coral</h2>
         <div class="icon">  
             <a href="https://www.youtube.com/"><img src="img/youtubeicon.png" alt=""></a>
             <a href="https://www.facebook.com/"><img src="img/facebookicon.png" alt=""></a>
             <a href="https://www.instagram.com/"><img src="img/instagramicon.png" alt=""></a>
         </div>
     </footer>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="js/base.js"></script>
+    <script>
+        $(window).scroll(function(){
+           var scroll = $(window).scrollTop();
+           if(scroll >= 300){
+           $(".customizep1 p").animate({opacity:'1'});
+           }
+           if(scroll >= 500){
+           $(".customizep2 p").animate({opacity:'1'});
+           }
+        })
+   </script>
 </body>
 </html>

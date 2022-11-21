@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="service.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/service.css">
     <title>Service</title>
 </head>
 <body>
@@ -16,12 +16,28 @@
                 <a href="index.html"><img src="img/logo.png" alt=""></a>
             </div>
             <ul>
-                <li><a href="product.html">ORGANISM</a></li>
-                <li><a href="product.html">PRODUCT</a></li>
+                <li id="organism" class="organism"><a href="product.html">ORGANISM</a>
+                    <img id="topbararrow1" src="img/topbararrow.png" alt="">
+                    <div>
+                        <p><a href="product.html">珊瑚</a></p>
+                        <p><a href="product.html">魚蝦</a></p>
+                    </div>
+                </li>
+                <li id="product_item" class="product_item top_btn"><a href="product.html">PRODUCT</a>
+                    <img id="topbararrow2" src="img/topbararrow.png" alt="">
+                    <div>
+                        <p><a href="product.html"></a>魚缸</p></a>
+                        <p><a href="product.html">櫃子</a></p>
+                        <p><a href="product.html">過濾</a></p>
+                        <!-- <p>燈具</p> -->
+                        <!-- <p>周邊</p> -->
+                    </div>
+                </li>
                 <li><a href="service.html">SERVICE</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="login.html">LOGIN</a></li>
             </ul>
+            <img id = "toolbar" class = "toolbar" src="img/bars-solid.png" alt="">
         </div>
     </header>
     <main>
@@ -29,10 +45,19 @@
             <h1>SERVICE</h1>
         </div>
         <div class="serviceimg">
-            <a href="customize.html"><p class="p p1">客製造景</p></a>
-            <a href="homeservice.html"><p class="p p2">到府維護</p></a>
-            <a class="p3a" href="query.html"><p class="p3">諮詢服務</p></a>
+            <a class="block1" href="customize.html">
+                <p class="p1 p">&nbsp</p>
+                <p class="word1">客製造景</p>
+            </a>
+            <a class="block1" href="homeservice.html">
+                <p class="p2 p">&nbsp</p>
+                <p class="word1">到府維護</p>
+            </a>
         </div>
+        <a class="p3a" href="query.html">
+            <p class="p3">&nbsp</p>
+            <p class="word2">諮詢服務</p>
+        </a>
     </main>
     <footer class="footer">
         <div class="row">
@@ -79,11 +104,15 @@
                 <a href="login.html">LOGIN</a>
             </div>
         </div>
+        <a href="#"><img src="img/logo.png" alt="" class="footerLogo"></a>
+        <h2>City Coral</h2>
         <div class="icon">  
             <a href="https://www.youtube.com/"><img src="img/youtubeicon.png" alt=""></a>
             <a href="https://www.facebook.com/"><img src="img/facebookicon.png" alt=""></a>
             <a href="https://www.instagram.com/"><img src="img/instagramicon.png" alt=""></a>
         </div>
     </footer>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="js/base.js"></script>
 </body>
 </html>

@@ -1,0 +1,238 @@
+@import url('reset.css');
+
+body{
+    width: 100%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.content_Singin{
+    display: none;
+}
+
+/* -------------- Login --------------------- */
+/* -------------- main --------------------- */
+
+.content{
+    display: block;
+    margin: 0 auto;
+    width: 700px; 
+    height: 466px;
+    background-color: #004481;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px 0 rgba(0, 0, 0, 0.3);
+    margin-top: 60px;
+    margin-bottom: 150px;
+}
+
+.content h1{
+    font-size: 26px;
+    color: #DEE8F1;
+    width: 350px;
+    height: 77px;
+    text-align: center;
+    line-height: 77px;
+    font-weight: 600;
+}
+
+.artical{
+    overflow: hidden;
+}
+
+.login{
+    opacity: 1;
+    float: left;
+    background-color: #004481;
+    border-radius: 10px 0 0 0 ;
+    box-shadow: none;
+    transition: all 1s;
+}
+
+.singin{
+    opacity: .6;
+    float: right;
+    background-color: #00396C;
+    border-radius: 0 10px 0 0 ;
+    box-shadow: rgba(0,0,0,0.5) 4px -4px 10px 0px inset;
+    transition: all 1s;
+}
+
+.singin:hover {
+    opacity: 1;
+    box-shadow: rgba(0,0,0,0.0) 4px -4px 10px 0px inset;
+    transition: all 0.6s;
+    background-color: #004481;
+}
+
+.boxshadow1{
+    opacity: 0.6;
+    float: left;
+    background-color: #00396C;
+    border-radius: 10px 0 0 0 ;
+    box-shadow: rgba(0,0,0,0.5) -4px -4px 10px inset;
+    transition: all 1s;
+}
+/* -------------------text area-------------------------- */
+
+.text{
+    display: block;
+    margin: 0 auto;
+    width: 370px;
+    padding-top: 15px;
+}
+
+.input h2{
+    font-size: 20px;
+    color: #DEE8F1;
+    text-align: left;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+
+
+input{
+    width: 370px;
+    height: 40px;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #00396C;
+    outline: none;
+    font-size: 16px;
+}
+
+/* -------------------btn-------------------------- */
+
+.btn{
+    display: block;
+    margin: 0 auto;
+    width: 270px;
+    height: 40px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    margin-top: 55px;
+}
+
+.content a, .content_Singin a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #004481;
+    font-weight: bold;
+}
+
+/* -------------- Singin --------------------- */
+
+.content_Singin{
+    display: none;
+    margin: 0 auto;
+    width: 700px; 
+    height: 888px;
+    background-color: #004481;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px 0 rgba(0, 0, 0, 0.3);
+    margin-top: 60px;
+    margin-bottom: 150px;
+}
+
+.content_Singin h1{
+    font-size: 26px;
+    color: #DEE8F1;
+    width: 350px;
+    height: 77px;
+    text-align: center;
+    line-height: 77px;
+    font-weight: bold;
+}
+
+.content_Singin .login{
+    opacity: .8;
+    float: left;
+    background-color: #00396C;
+    border-radius: 10px 0 0 0 ;
+    box-shadow: rgba(0,0,0,0.4) -4px -4px 10px 0px inset;
+}
+
+.content_Singin .login:hover{
+    background-color: #004481;
+    box-shadow: none;
+    opacity: 1;
+    transition: all 1s;
+}
+
+.boxshadow2{
+    opacity: 0.6;
+    float: right;
+    background-color: #00396C;
+    border-radius: 0 10px 0 0 ;
+    box-shadow: rgba(0,0,0,0.5) 4px -4px 10px inset;
+    transition: all 1s;
+}
+
+.content_Singin .singin{
+    background-color: #004481;
+    box-shadow:none;
+    opacity: 1;
+}
+
+
+
+@media screen and (max-width: 414px){
+    .content{
+        width: 80%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        height: 410px;
+    }
+
+    .content h1{
+        width: 50%;
+        font-size: 20px;    
+        height: 60px;
+        line-height: 60px;
+    }
+
+    .content_Singin .singin, .content_Singin .login{
+        width: 50%;
+        font-size: 20px;
+        height: 60px;
+        line-height: 60px;
+    }
+
+    .text{
+        width: 88%;    
+    }
+
+    input{
+        width: 94%;       
+        height: 35px;
+    }
+
+    .btn{
+        width: 54%;        
+        margin-top: 50px;        
+        height: 35px;
+        line-height: 35px;
+    }
+
+    .footer h2{
+        margin: 0;
+        text-align: center;
+        margin-top: 12px;
+    }
+
+    .content_Singin{
+        width: 80%;
+        height: 804px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+    .content_Singin h1{
+        height: 77px;
+    }
+
+
+
+}

@@ -1,0 +1,277 @@
+@import url('reset.css');
+
+body{
+    width: 100%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+/* -------------- main --------------------- */
+
+main{
+    padding-top: 70px;
+}
+
+.service{
+    width: 1100px;
+    height: 178px;
+    border: 5px #004481 solid;
+
+    display: block;
+    margin: 0 auto;
+}
+
+.service h1{
+    font-size: 60px;
+    text-align: center;
+    line-height: 178px;
+    color: #004481;
+}
+
+/* -------------- content --------------------- */
+
+.content{
+    display: block;
+    margin: 0 auto;
+    width: 700px; 
+    height: 888px;
+    background-color: #004481;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px 0 rgba(0, 0, 0, 0.3);
+    margin-top: 60px;
+    margin-bottom: 150px;
+}
+
+.content h1{
+    font-size: 26px;
+    color: #DEE8F1;
+    width: 700px;
+    height: 77px;
+    text-align: center;
+    line-height: 77px;
+    font-weight: 600;
+}
+
+/* ---------------------- guidebar ---------------------------*/
+
+.guide_box{
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+}
+
+.guideBoxContent{
+    display: flex;
+    width: 80%;
+}
+
+.guideBoxContent div{
+    margin-right: 30px;
+    margin-top: 55px;
+    font-weight: bolder;
+    color: #004481;
+    font-size: 20px;
+    position: relative;
+}
+
+.linebar{
+    display: block;
+    width: 100px;
+    height: 20px;
+    text-align: center;
+}
+
+.guideBoxContent div:nth-child(1){
+    font-size: 23px;
+}
+
+.guideBoxContent div::after{
+    content: '';
+    display: block;
+    width: 2px;
+    height: 20px;
+    background-color: #4ac0d9;
+
+    position: absolute;
+    right: -20px;
+    top: 0;
+}
+
+.guideBoxContent div:nth-last-child(1)::after{
+    display: none;
+}
+
+.guideBoxContent div a{
+    color: #004481;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* -------------------text area-------------------------- */
+
+.text{
+    display: block;
+    margin: 0 auto;
+    width: 370px;
+    height: 710px;
+}
+
+input{
+    width: 370px;
+    height: 40px;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #00396C;
+    outline: none;
+    font-size: 16px;
+}
+
+h2{
+    font-size: 20px;
+    color: #DEE8F1;
+    text-align: left;
+    margin: 20px 0;
+}
+
+.name{
+    font-size: 20px;
+    color: #DEE8F1;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+textarea{
+    width: 370px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+select{
+    width: 375px;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+/* -------------------btn-------------------------- */
+
+.btn{
+    display: block;
+    margin: 0 auto;
+    width: 270px;
+    height: 40px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+
+    font-size: 20px;
+    color: #004481;
+    font-weight: bold;
+
+}
+
+@media screen and (max-width: 414px){
+    
+    main{
+        padding-top: 40px;
+    }
+    
+    
+    .service{
+        width: 79%;
+        height: 64px;
+        border: 3px #004481 solid;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .service h1{
+        font-size: 30px;
+        line-height: 64px;
+    }
+
+    .guide_box{
+        width: 80%;
+    }
+
+    .guideBoxContent{
+        width: 100%;
+    }
+
+    .guideBoxContent div{
+        margin-top: 5px;
+        width: 33%;
+        margin: 0 auto;
+    }
+
+    .guideBoxContent div::after{
+        right: -2px;
+    }
+
+    .guideBoxContent div:nth-child(1){
+        font-size: 19px;
+    }
+
+    .guideBoxContent div a{
+        font-size: 17px;
+    }
+
+    .content{
+        width: 80%;
+        height: 830px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        }
+
+    .content h1{
+        font-size: 20px;
+        width: auto;
+        height: 60px;
+    }
+
+    .text{
+        width: 88%;
+        height: 660px;
+    }
+
+    .text h2{
+        font-size: 20px;
+        color: #DEE8F1;
+        text-align: left;
+        margin: 20px 0;
+        font-weight: bold;
+    }
+
+    input{
+        width: 94%;
+    }
+
+    select{
+        width: 96%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    textarea{
+        width: 96%;
+        height: 150px;
+    }
+
+    .btn{
+        width: 54%;        
+        height: 35px;
+        line-height: 35px;
+    }
+
+    footer h2{
+        text-align: center;
+    }
+
+    .footer .icon{
+        padding-top: 0;
+    }
+}

@@ -1,0 +1,347 @@
+@import url('reset.css');
+
+body{
+    width: 100%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+/* -------------- main --------------------- */
+
+main{
+    padding-top: 70px;
+}
+
+.service{
+    width: 1100px;
+    height: 178px;
+    border: 5px #004481 solid;
+
+    display: block;
+    margin: 0 auto;
+}
+
+.service h1{
+    font-size: 60px;
+    text-align: center;
+    line-height: 178px;
+    color: #004481;
+}
+
+/* -------------- section --------------------- */
+
+section{
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+    height: 1320px;
+    border: 5px #004481 solid;
+    margin-top: 55px;
+    color: #004481;
+    margin-bottom: 150px;
+}
+
+section h1{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 100px;
+    font-weight: 550;
+}
+
+article{
+    margin-top: 130px;
+}
+
+/* ---------------------- guidebar ---------------------------*/
+
+.guide_box{
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+}
+
+.guideBoxContent{
+    display: flex;
+    width: 80%;
+}
+
+.guideBoxContent div{
+    margin-right: 30px;
+    margin-top: 55px;
+    font-weight: bolder;
+    color: #004481;
+    font-size: 20px;
+    position: relative;
+}
+
+.linebar{
+    display: block;
+    width: 100px;
+    height: 20px;
+    text-align: center;
+}
+
+.guideBoxContent div:nth-child(1){
+    font-size: 23px;
+}
+
+.guideBoxContent div::after{
+    content: '';
+    display: block;
+    width: 2px;
+    height: 20px;
+    background-color: #4ac0d9;
+
+    position: absolute;
+    right: -20px;
+    top: 0;
+}
+
+.guideBoxContent div:nth-last-child(1)::after{
+    display: none;
+}
+
+.guideBoxContent div a{
+    color: #004481;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* ---------------------- artical 1 ---------------------------*/
+
+.article1{
+    overflow: hidden;
+}
+
+.article1 > img{
+    float: left;
+    width: 46%;
+    padding-left: 43px;
+}
+
+.customizep1{
+    width: 49%;
+    height: 281px;
+    float: right;
+}
+
+.customizep1 img{
+    float: none;
+    display: block;
+    margin-left: 44%;
+    margin-top: 38px;
+}
+
+.customizep1 p{
+    opacity: 0;
+}
+/* ---------------------- artical 2---------------------------*/
+
+.article2{
+    overflow: hidden;
+}
+
+.article2 img{
+    float: right;
+    width: 46%;
+    padding-right: 43px;
+}
+
+.customizep2{
+    float: left;
+    width: 49%;
+    height: 281px;
+}
+
+.customizep2 > img{
+    width: 86px;
+    float: none;
+    margin-left: 43%;
+}
+
+.customizep2 p{
+    opacity: 0;
+}
+/* --------------------------- p--------------------------------*/
+
+article p{
+    display: block;
+    margin: 0 auto;
+    width: 420px;
+    font-size: 30px;
+    text-align: left;
+    font-weight: 550;
+    margin-top: 60px;
+}
+
+.article2 p{
+    margin-top: 50px;
+}
+
+/* --------------------------- btn--------------------------------*/
+
+.btn{
+    border: #004481 solid 3px;
+    border-radius: 40px;
+    display: block;
+    width: 323px;
+    height: 72px;
+    margin: 130px auto;
+    text-align: center;
+    line-height: 72px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+section a{
+    color: #004481;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 414px){
+
+    main{
+        padding-top: 40px;
+    }
+
+    .service{
+        width: 79%;
+        height: 64px;
+        border: 3px #004481 solid;
+        margin-bottom: 35px;
+    }
+
+    .service h1 {
+        font-size: 30px;
+        line-height: 66px;
+    }
+
+    section{
+        width: 80%;
+        border: 3px #004481 solid;
+        margin-top: 45px;
+        height: 920px;
+        margin-bottom: 50px;
+
+    }
+
+    section h1{
+        font-size: 30px;
+        margin-top: 40px;
+    }
+
+    .guide_box{
+        width: 80%;
+    }
+
+    .guideBoxContent{
+        width: 100%;
+    }
+
+    .guideBoxContent div{
+        margin-top: 5px;
+        width: 33%;
+        margin: 0 auto;
+    }
+
+    .guideBoxContent div::after{
+        right: -2px;
+    }
+
+    .guideBoxContent div:nth-child(1){
+        font-size: 19px;
+    }
+
+    .guideBoxContent div a{
+        font-size: 17px;
+    }
+
+    article{
+        margin-top: 50px;
+    }
+
+/* ---------------------- artical 1---------------------------*/
+
+    .article1 > img{
+        float: none;
+        width: 92%;
+        display: block;
+        margin: 0 auto;
+        padding-left: 0;
+    }
+
+    .customizep1{
+        float: none;
+        width: 97%;
+        height: 180px;
+    }
+
+    .customizep1 img{
+        float: left;
+        width: 55px;
+        transform: translate(42%, 94%);
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .customizep1 p{
+        float: right;
+        font-size: 17px;
+        width: 68%;
+        margin-right: 0;
+        margin-top: 50px;
+    }
+
+/* ---------------------- artical 2---------------------------*/
+
+    .article2{
+        margin-top: 0;
+    }
+
+    .article2 > img{
+        float: none;
+        width: 92%;
+        display: block;
+        margin: 0 auto;
+        padding-right: 0px;
+    }
+
+    .customizep2{
+        float: none;
+        width: 97%;
+        height: 180px;
+    }
+
+    .customizep2 > img{
+        margin-left: 0;
+        float: left;
+        width: 65px;
+        transform: translate(35%, 106%);
+        padding-right: 0px;
+    }
+
+    .article2 p{
+        float: right;
+        font-size: 17px;
+        width: 68%;
+        margin-right: 0;
+        margin-top: 50px;
+    }
+
+    .btn{
+        margin: 25px auto 0;        
+        width: 129px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 20px;
+        border: #004481 solid 2px;
+    }
+
+
+
+
+
+
+
+
+}

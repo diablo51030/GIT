@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/about.css">
     <script src="https://kit.fontawesome.com/864738e1b6.js" crossorigin="anonymous"></script>
     <title>About</title>
 </head>
@@ -17,12 +17,28 @@
                 <a href="index.html"><img src="img/logo.png" alt=""></a>
             </div>
             <ul>
-                <li><a href="product.html">ORGANISM</a></li>
-                <li><a href="product.html">PRODUCT</a></li>
+                <li id="organism" class="organism"><a href="product.html">ORGANISM</a>
+                    <img id="topbararrow1" src="img/topbararrow.png" alt="">
+                    <div>
+                        <p><a href="product.html">珊瑚</a></p>
+                        <p><a href="product.html">魚蝦</a></p>
+                    </div>
+                </li>
+                <li id="product_item" class="product_item top_btn"><a href="product.html">PRODUCT</a>
+                    <img id="topbararrow2" src="img/topbararrow.png" alt="">
+                    <div>
+                        <p><a href="product.html"></a>魚缸</p></a>
+                        <p><a href="product.html">櫃子</a></p>
+                        <p><a href="product.html">過濾</a></p>
+                        <!-- <p>燈具</p> -->
+                        <!-- <p>周邊</p> -->
+                    </div>
+                </li>                
                 <li><a href="service.html">SERVICE</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="login.html">LOGIN</a></li>
             </ul>
+            <img id = "toolbar" class = "toolbar" src="img/bars-solid.png" alt="">
         </div>
     </header>
     <main>
@@ -32,15 +48,14 @@
         <section>
             <!-- 關於我們 -->
             <article class="article1">
-                <img src="img/aboutimg1.png" alt="">
                 <div class="customizep1"> 
                     <h1>關於我們</h1>               
                     <p>我們是一群熱愛海洋的人，更是對珊瑚有無限的熱忱。希望藉由推廣海水缸的來讓更多的人了解到珊瑚對海洋的重要性並感受海洋的奧秘之處。</p>
                 </div>
+                <img src="img/aboutimg1.png" alt="">
             </article>
             <!-- 店家資訊 -->
             <article class="article2">
-                <div class="img"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1806.586347632069!2d121.51565500787449!3d25.096014824991677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aeb8cbc067e3%3A0xf4ede97e74e06013!2z5ZyL56uL6Ie654Gj56eR5a245pWZ6IKy6aSo!5e0!3m2!1szh-TW!2stw!4v1667205306889!5m2!1szh-TW!2stw" width="560" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
                 <div class="customizep2">
                     <h2>店家資訊</h2>
                     <div class="content time">
@@ -56,6 +71,7 @@
                         <p>地址:台北市大安區民森南路158巷6號</p>
                     </div>
                 </div>
+                <div class="img"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1806.586347632069!2d121.51565500787449!3d25.096014824991677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aeb8cbc067e3%3A0xf4ede97e74e06013!2z5ZyL56uL6Ie654Gj56eR5a245pWZ6IKy6aSo!5e0!3m2!1szh-TW!2stw!4v1667205306889!5m2!1szh-TW!2stw" width="560" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
             </article>
         </section>
     </main>
@@ -104,11 +120,15 @@
                 <a href="login.html">LOGIN</a>
             </div>
         </div>
+        <a href="#"><img src="img/logo.png" alt="" class="footerLogo"></a>
+        <h2>City Coral</h2>
         <div class="icon">  
             <a href="https://www.youtube.com/"><img src="img/youtubeicon.png" alt=""></a>
             <a href="https://www.facebook.com/"><img src="img/facebookicon.png" alt=""></a>
             <a href="https://www.instagram.com/"><img src="img/instagramicon.png" alt=""></a>
         </div>
     </footer>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="js/base.js"></script>
 </body>
 </html>

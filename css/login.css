@@ -184,6 +184,7 @@ input{
         margin-top: 50px;
         margin-bottom: 50px;
         height: 410px;
+        transition: all 0.5s;
     }
 
     .content h1{
@@ -224,9 +225,10 @@ input{
 
     .content_Singin{
         width: 80%;
-        height: 804px;
+        height: 820px;
         margin-bottom: 50px;
         margin-top: 50px;
+        transition: all 0.5s;
     }
 
     .content_Singin h1{

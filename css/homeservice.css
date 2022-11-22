@@ -170,11 +170,12 @@ article p{
     font-size: 30px;
     text-align: left;
     font-weight: 550;
-    margin-top: 60px;
+    margin-top: 45px;
+    line-height: 1.2;
 }
 
 .article2 p{
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
 /* --------------------------- btn--------------------------------*/

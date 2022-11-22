@@ -817,4 +817,8 @@ main{
     line-height: 1.5;
 }
 
+.footer .icon{
+    padding-top: 37px;
+}
+
 }

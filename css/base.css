@@ -131,14 +131,19 @@ footer .item{
 
 .footerLogo{
     display: none;
+    position: inherit;
+    z-index: 4;
 }
 
 .footer h2{
     display: none;
+    position: inherit;
+    z-index: 4;
 }
 
 .icon{
     bottom: 20px;
+    position: inherit;
     z-index: 4;
 }
 

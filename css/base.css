@@ -38,10 +38,12 @@ header .top{
 
 .top a{
     margin-right :15px;
+    transition: all 0.4s;
 }
 
 .top a:hover{
-    color: rgb(185, 185, 185);
+    color: rgb(255, 255, 255);
+    transition: all 0.4s;
 }
 
 header ul{

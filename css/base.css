@@ -166,10 +166,6 @@ footer .item{
     height: 70px;
    }
     
-   header ul{
-    height: 0px;
-   }
-
    .logo{
     z-index: 3;
    }
@@ -202,7 +198,7 @@ footer .item{
 
        /* tool bar */
     header ul{
-        height: auto;
+        height: 900px;        
         width: 70%;
         display: block;
         position: absolute;

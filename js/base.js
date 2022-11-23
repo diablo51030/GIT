@@ -49,7 +49,7 @@ $("#topbararrow2").on("click", function(){
     k = k -1;
     console.log(k);
     }else{
-    $("#product_item").css("margin-bottom","150px");
+    $("#product_item").css("margin-bottom","250px");
     $(".product_item div").css('left','0');
     k = k +1;
     console.log(k);
